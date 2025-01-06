@@ -16,16 +16,17 @@ Repository를 fork 하여 본인의 repository로 옮긴 후,
 
 ```javascript
 1. let uninitialized;
-console.log(uninitialized); // 결과값 < 빈칸 >
+console.log(uninitialized); // 결과값 < undefined >
+ // 선언되었지만 값이 할당 되어지지 않았다.
 
 
-2. < 빈칸 > apple = "사과";
+2. < const > apple = "사과";
 apple = "바나나"; // TypeError: Assignment to constant variable
-
+// const는 재할당 불가
 
 3. let lotto = [3, 8, 13, 19, 21, 32];
-console.log(lotto[3]); // 결과값 < 빈칸 >
-
+console.log(lotto[3]); // 결과값 < 19 >
+// lotto의 index 3번째 값
 
 4.
 let mySchedule = "";
